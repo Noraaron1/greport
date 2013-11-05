@@ -63,7 +63,7 @@ public class GreportCommands extends JavaPlugin
     if (cmd.getName.equalsIgnoreCase("gread")) {
       if (player.hasPermission("gread.command")){
         try {
-          if (!isInt(args[0]))
+          if (!isInt(args[0])) break label847;
           try {
             ch.readReport(player, Integer.parseInt(args[0])); 
             } catch (NumberFormatException localNumberFormatException) {
