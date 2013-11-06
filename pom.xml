@@ -23,18 +23,7 @@
 			<plugin>
                 <groupId>com.lukegb.mojo</groupId>
                 <artifactId>gitdescribe-maven-plugin</artifactId>
-                <version>1.5</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>gitdescribe</goal>
-                        </goals>
-                        <id>git-describe</id>
-                        <phase>initialize</phase>
-                        <configuration>
-                            <outputPrefix></outputPrefix>
-                        </configuration>
-                    </execution>
+                <version>1.0</version>
                 </executions>
             </plugin>
 			<plugin>
