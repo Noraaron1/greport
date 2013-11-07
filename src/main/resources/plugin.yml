@@ -1,0 +1,15 @@
+name: Greport
+main: me.noraaron1.Greport.GreportCommands
+version: 1.4
+description: The Grief Report Command!
+
+commands:
+  greport:
+    description: Reports Grief
+    permission: greport.command
+  glist:
+    description: Checks the griefs!
+    permission: glist.command
+  gread:
+    description: Reads The Griefs!
+    permission: read.command

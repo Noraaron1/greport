@@ -1,0 +1,14 @@
+# Copy the language that you want to use, **MAKE SURE THE FIRST LETTER IS CAPITAL**
+# DO NOT ALTER THIS FILE IN ANY WAY IT WILL BREAK THE PLUGIN
+# Default Language is English, just replace English with one of the languages below to load that language. Then restart/reload your server.
+Language: English
+Languages:
+  English:
+    '1': There are no reports at the moment.
+    '2': You do not have permission to use this command.
+    '3': There are greports waiting to be looked at.
+    '4': A new report has been submitted.
+    '5': Thank you for submitting a report.
+    '6': Report
+    '7': Read
+    '8': Unread
