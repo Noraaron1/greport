@@ -35,7 +35,7 @@ public class GreportCommands extends JavaPlugin
   public boolean onCommand(CommandSender sender, Command cmd, String args, String[] args)
   {
     Player player = (Player)sender;
-    if (cmd.getName.equalsIgnoreCase("greport")) {
+    if (cmd.getName().equalsIgnoreCase("greport")) {
       if (args.length == 0) {
         sender.sendMessage(ChatColor.RED + "Usage: /greport <msg>");
       }
@@ -53,14 +53,14 @@ public class GreportCommands extends JavaPlugin
         }
         }
     }
-    if (cmd.getName.equalsIgnoreCase("glist")) {
+    if (cmd.getName().equalsIgnoreCase("glist")) {
       if (player.hasPermission("glist.command")){
         ch.listUnreadReports(player);
     }else{
         player.sendMessage(ChatColor.DARK_RED + LangFile.ln2);
       }
     }
-    if (cmd.getName.equalsIgnoreCase("gread")) {
+    if (cmd.getName().equalsIgnoreCase("gread")) {
       if (player.hasPermission("gread.command")){
         try {
           if (!isInt(args[0])) break label847;
