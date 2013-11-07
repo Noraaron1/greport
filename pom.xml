@@ -1,74 +1,53 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>me.noraaron1.greport</groupId>
-  <artifactId>greport</artifactId>
-  <version>1.5</version>
-  <packaging>jar</packaging> 
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>me.noraaron1.greport</groupId>
+    <artifactId>greport</artifactId>
+    <version>1.5.0</version>
+    <packaging>jar</packaging> 
   
     <name>Greport</name>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
     
-      <repositories>
-    <repository>
-      <id>bukkit-repo</id>
-      <url>http://repo.bukkit.org/content/groups/public</url>
-    </repository>
-  </repositories>
-    
-  	<dependencies>
-    <dependency>
-      <groupId>org.bukkit</groupId>
-      <artifactId>bukkit</artifactId>
-      <version>1.5.1-R0.2</version>
-      <scope>compile</scope>
-      <type>jar</type>
-      <optional>true</optional>
-    </dependency>
-  	</dependencies>
-        <build>
-                <resources>
+    <repositories>
+        <repository>
+            <id>bukkit-repo</id>
+            <url>http://repo.bukkit.org/content/groups/public</url>
+        </repository>
+    </repositories>
+    <dependencies>
+        <dependency>
+            <groupId>org.bukkit</groupId>
+            <artifactId>bukkit</artifactId>
+            <version>1.6.4-R2.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
             <resource>
-                <directory>src/me/noraaron1/Greport</directory>
+                <directory>src/main/resources</directory>
                 <filtering>true</filtering>
                 <includes>
-                    <include>**/*.yml</include>
+                    <include>**</include>
                 </includes>
             </resource>
-            <resource>
-                <directory>src/me/noraaron1/Greport</directory>
-                <filtering>false</filtering>
-                <excludes>
-                    <exclude>**/*.yml</exclude>
-                </excludes>
-            </resource>
         </resources>
-
-		<plugins>
-			<plugin>
-                <groupId>com.lukegb.mojo</groupId>
-                <artifactId>gitdescribe-maven-plugin</artifactId>
-                <version>1.0</version>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
             </plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-shade-plugin</artifactId>
-				<version>2.0</version>
-				<configuration>
-					<artifactSet>
-                    <includes>
-						<include>org.apache.tomcat:com.springsource.org.apache.tomcat.jdbc</include>
-						<include>org.apache.juli:com.springsource.org.apache.juli.extras</include>
-                    </includes>
-                  </artifactSet>
-				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+        </plugins>
+    </build>
 </project>
+ 
