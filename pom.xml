@@ -4,6 +4,10 @@
   <artifactId>greport</artifactId>
   <version>1.5</version>
   <name>greport</name>
+  <packaging>jar</packaging> 
+  
+    <name>Greport</name>
+    
   	<dependencies>
     <dependency>
       <groupId>org.bukkit</groupId>
