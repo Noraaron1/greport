@@ -24,9 +24,24 @@
       <optional>true</optional>
     </dependency>
   	</dependencies>
-	<build>
-		<resources>
+        <build>
+                <resources>
+            <resource>
+                <directory>src/me/noraaron1/Greport</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>**/*.yml</include>
+                </includes>
+            </resource>
+            <resource>
+                <directory>src/me/noraaron1/Greport</directory>
+                <filtering>false</filtering>
+                <excludes>
+                    <exclude>**/*.yml</exclude>
+                </excludes>
+            </resource>
         </resources>
+
 		<plugins>
 			<plugin>
                 <groupId>com.lukegb.mojo</groupId>
