@@ -32,7 +32,7 @@ public class GreportCommands extends JavaPlugin
       System.out.println("[Greport] ERROR - Creating Base Report File");
     } }
 
-  public boolean onCommand(CommandSender sender, Command cmd, String args, String[] args)
+  public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args)
   {
     Player player = (Player)sender;
     if (cmd.getName().equalsIgnoreCase("greport")) {
