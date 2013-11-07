@@ -3,7 +3,6 @@
   <groupId>me.noraaron1.greport</groupId>
   <artifactId>greport</artifactId>
   <version>1.5</version>
-  <name>greport</name>
   <packaging>jar</packaging> 
   
     <name>Greport</name>
