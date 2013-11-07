@@ -5,11 +5,14 @@
   <version>1.5</version>
   <name>greport</name>
   	<dependencies>
-		<dependency>
-			<groupId>org.bukkit</groupId>
-			<artifactId>bukkit</artifactId>
-			<version>1.6.4-R1.0</version>
-		</dependency>
+    <dependency>
+      <groupId>org.bukkit</groupId>
+      <artifactId>bukkit</artifactId>
+      <version>1.5.1-R0.2</version>
+      <scope>compile</scope>
+      <type>jar</type>
+      <optional>true</optional>
+    </dependency>
   	</dependencies>
 	<build>
 		<resources>
